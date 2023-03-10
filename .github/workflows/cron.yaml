@@ -1,6 +1,9 @@
 on:
   schedule:
     - cron: "0 2 * * *"
+  # manual run
+  workflow_dispatch:
+    inputs: []
 
 jobs:
   glados-sign:
