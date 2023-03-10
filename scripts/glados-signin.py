@@ -20,7 +20,7 @@ cookie = {
 value = {"token": "glados.network"}
 
 # wait some times
-time.sleep(random.randint(300, 3600))
+time.sleep(random.randint(30, 300))
 
 result = requests.post(url, cookies=cookie, data=value)
 result_json = result.json()
