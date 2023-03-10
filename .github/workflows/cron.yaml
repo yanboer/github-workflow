@@ -3,7 +3,7 @@ on:
     - cron: "0 2 * * *"
   # manual run
   workflow_dispatch:
-    inputs: []
+    inputs:
 
 jobs:
   glados-sign:
