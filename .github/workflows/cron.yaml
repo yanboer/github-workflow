@@ -22,6 +22,10 @@ jobs:
           pip install yagmail requests
 
       - name: Run
+        env: 
+          EMAIL: ${{ secrets.EMAIL }}
+          PASSWORD: ${{ secrets.PASSWORD }}
         run: |
           cd scripts
           python glados-signin.py
+

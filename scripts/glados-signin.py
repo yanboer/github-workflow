@@ -4,10 +4,15 @@ import requests
 import yagmail
 import random
 import time
+import os
+import json
+
+email = os.environ.get("EMAIL")
+password = os.environ.get("PASSWORD")
 
 # glados 签到 url
 url = "https://glados.rocks/api/user/checkin"
-cookie = {
+cookies = {
     "koa:sess": "eyJ1c2VySWQiOjM0NjY0LCJfZXhwaXJlIjoxNzAyNTIzNjU3Njk3LCJfbWF4QWdlIjoyNTkyMDAwMDAwMH0=",
     "koa:sess.sig": "6CQ_cZ_CC_uaAVIoVQvwb-7nKjA",
     "__stripe_mid": "b722e623-8452-4092-996e-3fe9533bcc2bfdb53b",
@@ -22,7 +27,7 @@ value = {"token": "glados.network"}
 # wait some times
 time.sleep(random.randint(30, 300))
 
-result = requests.post(url, cookies=cookie, data=value)
+result = requests.post(url, cookies=cookies, data=value)
 result_json = result.json()
 
 # print(result_json)
@@ -38,5 +43,5 @@ msg = {
 #print(msg)
 
 # password 是 qq 的密码框(需要开启服务)
-yag = yagmail.SMTP(user='2695388808@qq.com', password='bcxukmbywwyndcgi', host='smtp.qq.com')
-yag.send(to='2695388808@qq.com', subject='glados sign in', contents=msg)
+yag = yagmail.SMTP(user=email, password=password, host='smtp.qq.com')
+yag.send(to=email, subject='glados sign in', contents=msg)
