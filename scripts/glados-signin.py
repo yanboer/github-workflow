@@ -30,7 +30,7 @@ time.sleep(random.randint(30, 300))
 result = requests.post(url, cookies=cookies, data=value)
 result_json = result.json()
 
-# print(result_json)
+print(result_json)
 
 code = result_json['code']
 message = result_json['message']
