@@ -20,7 +20,7 @@ cookies = {
     "_ga": "GA1.1.1156446483.1676172823"
 }
 # from 请求负载
-value = {"token": "glados.network"}
+value = {"token": "glados.one"}
 
 # wait some times
 time.sleep(random.randint(30, 300))
