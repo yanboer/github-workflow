@@ -13,13 +13,11 @@ password = os.environ.get("PASSWORD")
 # glados 签到 url
 url = "https://glados.rocks/api/user/checkin"
 cookies = {
-    "koa:sess": "eyJ1c2VySWQiOjM0NjY0LCJfZXhwaXJlIjoxNzAyNTIzNjU3Njk3LCJfbWF4QWdlIjoyNTkyMDAwMDAwMH0=",
-    "koa:sess.sig": "6CQ_cZ_CC_uaAVIoVQvwb-7nKjA",
-    "__stripe_mid": "b722e623-8452-4092-996e-3fe9533bcc2bfdb53b",
-    "_gid": "GA1.2.2108941348.1677120628",
-    "_ga": "GA1.2.1838872950.1675740084",
-    "_gat_gtag_UA_104464600_2": "1",
-    "_ga_CZFVKMNT9J": "GS1.1.1677135491.7.0.1677135496.0.0.0"
+    "koa:sess": "eyJ1c2VySWQiOjM0NjY0LCJfZXhwaXJlIjoxNzE2NDMyOTU5NTQ1LCJfbWF4QWdlIjoyNTkyMDAwMDAwMH0=",
+    "koa:sess.sig": "plDXcVXj0oMuDf35QAgs6Oyj_gs",
+    "__stripe_mid": "eacc2440-5c4f-4368-ab1f-5b961f8e7a0bbdcaad",
+    "_ga_CZFVKMNT9J": "GS1.1.1690512957.9.1.1690513362.0.0.0",
+    "_ga": "GA1.1.1156446483.1676172823"
 }
 # from 请求负载
 value = {"token": "glados.network"}
