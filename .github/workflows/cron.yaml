@@ -1,6 +1,6 @@
 on:
-#   schedule:
-#     - cron: "0 2 * * *"
+  schedule:
+    - cron: "0 2 * * *"
   # manual run
   workflow_dispatch:
     inputs:
